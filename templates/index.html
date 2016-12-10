@@ -5,7 +5,7 @@
   <title>polylactide</title>
 
   <!-- main browserify bundle, contains webcomponents.js. -->
-  <script src="{{ contents.scripts['main.coffee'].url }}"></script>
+  <script src="scripts/main.js"></script>
 
   <!-- wintersmith-livereload, injects livereload script in preview mode -->
   {{ livereloadScript }}
@@ -14,8 +14,8 @@
   <link rel="import" href="polymer/polymer.html">
 
   <!-- our custom components -->
-  <link rel="import" href="components/banana/">
-  <link rel="import" href="components/disco/">
+  <link rel="import" href="components/banana/index.html">
+  <link rel="import" href="components/disco/index.html">
 
 </head>
 <body>
