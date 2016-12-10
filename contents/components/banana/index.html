@@ -1,0 +1,16 @@
+<dom-module id="x-banana">
+  <template>
+    <style>
+      :host { display: block; }
+    </style>
+    <img src="{{ bananaImage }}">
+  </template>
+  <script>
+    Polymer({
+      is: 'x-banana',
+      ready: function() {
+        this.bananaImage = this.resolveUrl('banana.jpg')
+      }
+    })
+  </script>
+</dom-module>

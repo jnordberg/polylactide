@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title>polylactide</title>
+
+  <!-- main browserify bundle, contains webcomponents.js. -->
+  <script src="{{ contents.scripts['main.coffee'].url }}"></script>
+
+  <!-- wintersmith-livereload, injects livereload script in preview mode -->
+  {{ livereloadScript }}
+
+  <!-- polymer init -->
+  <link rel="import" href="polymer/polymer.html">
+
+  <!-- our custom components -->
+  <link rel="import" href="components/banana/">
+  <link rel="import" href="components/disco/">
+
+</head>
+<body>
+
+  <!-- simple component with everything inlined -->
+  <x-banana></x-banana>
+
+  <!-- component using coffeescript and stylus -->
+  <x-disco style="font: 3em Helvetica">I'm a little teapot, here's my tratt!</x-disco>
+
+</body>
+</html>

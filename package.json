@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@polymer/polymer": "*",
+    "webcomponents.js": "*",
+    "wintersmith-browserify": "*",
+    "wintersmith-livereload": "*",
+    "wintersmith-nunjucks": "*",
+    "wintersmith-stylus": "*"
+  },
+  "private": true
+}

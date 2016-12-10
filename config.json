@@ -1,0 +1,20 @@
+{
+  "plugins": [
+    "wintersmith-browserify",
+    "wintersmith-stylus",
+    "wintersmith-nunjucks",
+    "wintersmith-livereload",
+    "./plugins/polymer.coffee"
+  ],
+  "nunjucks": {
+    "autoescape": false
+  },
+  "livereload": {
+    "liveCSS": false
+  },
+  "stylus": {
+    "dependencies": [
+      "nib"
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+
+@import 'nib'
+
+:host
+    display: inline-block
+
+@keyframes blink
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+
+@keyframes spin
+    0%
+        transform: rotateX(0deg)
+    100%
+        transform: rotateX(360deg)
+
+
+@keyframes jump
+    0%
+        transform: translateY(0)
+    20%
+        transform: translateY(-0.5em)
+    100%
+        transform: translateY(0em)
+
+.char
+    display: inline-block
+    animation-direction: alternate
+    animation-iteration-count: infinite
+
+    &.space
+        display: inline
+
+    for i in 1..100
+        &.duration-{ i }
+            animation-duration: 100 + i * 20ms
+        &.color-{ i }
+            color: hsl(i * 3.6deg, 80%, 80%)
+
+    &.blink
+        animation-name: blink
+
+    &.spin
+        animation-name: spin
+
+    &.jump
+        animation-name: jump
+        animation-direction: normal
+        animation-timing-function: linear
